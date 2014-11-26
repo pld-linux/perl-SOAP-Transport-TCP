@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	SOAP
 %define		pnam	Transport-TCP
 %include	/usr/lib/rpm/macros.perl
 Summary:	SOAP::Transport::TCP - TCP Transport Support for SOAP::Lite
-#Summary(pl.UTF-8):	
 Name:		perl-SOAP-Transport-TCP
 Version:	0.715
 Release:	1
@@ -14,8 +13,7 @@ License:	artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/SOAP/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a1f50f3c4ca3efd1062ed64468d9363d
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/SOAP-Transport-TCP/
+URL:		http://search.cpan.org/dist/SOAP-Transport-TCP/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -26,9 +24,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
-# %description -l pl.UTF-8
-# TODO
+TCP Transport Support for SOAP::Lite.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
