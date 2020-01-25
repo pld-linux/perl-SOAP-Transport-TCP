@@ -4,7 +4,6 @@
 
 %define		pdir	SOAP
 %define		pnam	Transport-TCP
-%include	/usr/lib/rpm/macros.perl
 Summary:	SOAP::Transport::TCP - TCP Transport Support for SOAP::Lite
 Name:		perl-SOAP-Transport-TCP
 Version:	0.715
